@@ -2256,24 +2256,31 @@ input, select, textarea {
 		}
 
 		.icon.major {
-			border: solid 1px;
-			display: inline-block;
-			border-radius: 100%;
-			padding: 0.65em;
-			margin: 0 0 2em 0;
-			cursor: default;
-		}
+    border: solid 1px;
+    display: inline-flex;    /* Changed to flex for perfect centering */
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin: 0 0 1em 0;
+    cursor: default;
+    
+    /* These control the outer circle size */
+    width: 2.25em;           
+    height: 2.25em;
+    font-size: 6.25rem;      /* This keeps the template's original scale */
+}
 
-			.icon.major:before {
-				display: inline-block;
-				font-size: 6.25rem;
-				width: 2.25em;
-				height: 2.25em;
-				line-height: 2.2em;
-				border-radius: 100%;
-				border: solid 1px;
-				text-align: center;
-			}
+/* This disables the old FontAwesome placeholder */
+.icon.major:before {
+    display: none !important; 
+}
+
+.icon.major img {
+    width: 65%;              /* Boosted this slightly for visibility */
+    height: 65%;
+    object-fit: contain;     /* Ensures the logo isn't squished */
+    border-radius: 0;
+}
 
 		.icon.alt {
 			display: inline-block;
