@@ -3859,14 +3859,29 @@ input, select, textarea {
 }
 
 .gallery-item img {
-    width: 90%;
+    width: 70%;
     height: auto; /* Keeps the aspect ratio perfect */
     border-radius: 5px;
     border: 1px solid #333;
     box-shadow: 0 1px 1px rgba(0,0,0,0.4);
     display: block;
 }
-
+.gallery-itemPort img {
+    width: 30%;
+    height: auto; /* Keeps the aspect ratio perfect */
+    border-radius: 5px;
+    border: 1px solid #333;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.4);
+    display: block;
+}
+.gallery-itemPort2 img {
+    width: 20%;
+    height: auto; /* Keeps the aspect ratio perfect */
+    border-radius: 5px;
+    border: 1px solid #333;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.4);
+    display: block;
+}
 .gallery-item p {
     margin-top: 15px;
     color: black;
@@ -3883,4 +3898,51 @@ input, select, textarea {
     display: block;   /* Allows margin: auto to work */
     width: 30%;
     margin: 0 auto;   /* 0 for top/bottom, auto for left/right (centers it) */
+}
+
+.droneLogo img {
+    display: block;   /* Allows margin: auto to work */
+    width: 30%;
+    margin: 0 auto;   /* 0 for top/bottom, auto for left/right (centers it) */
+	align-items:center;
+}
+
+.rotomIcon img {
+    display: block;   /* Allows margin: auto to work */
+    width: 20%;
+    margin: 0 auto;   /* 0 for top/bottom, auto for left/right (centers it) */
+}
+.studyIcon img {
+    display: block;   /* Allows margin: auto to work */
+    width: 30%;
+    margin: 0 auto;   /* 0 for top/bottom, auto for left/right (centers it) */
+	align-items:center;
+}
+.rollingIcon img {
+    display: block;   /* Allows margin: auto to work */
+    width: 10%;
+    margin: 0 auto;   /* 0 for top/bottom, auto for left/right (centers it) */
+	align-items:center;
+}
+
+.assistantIcon img {
+    display: block;   /* Allows margin: auto to work */
+    width: 20%;
+    margin: 0 auto;   /* 0 for top/bottom, auto for left/right (centers it) */
+	align-items:center;
+}
+
+.video-container {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+
+.aboutMeBooks img {
+    display: block;   /* Allows margin: auto to work */
+    height: 50%;
+    width:100%;
+	margin: 0 auto;   /* 0 for top/bottom, auto for left/right (centers it) */
+	margin-bottom: 20px;
+	align-items:center;
 }
