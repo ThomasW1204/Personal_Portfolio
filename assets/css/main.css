@@ -3345,21 +3345,26 @@ input, select, textarea {
 					font-size: 0.9em;
 				}
 
-		@media screen and (max-width: 736px) {
-
-			#nav {
-				display: flex;
-        flex-direction: column; /* Stack links vertically */
+	@media screen and (max-width: 736px) {
+    #nav {
+        display: flex;
+        flex-direction: column; 
         align-items: center;
-        gap: 15px;              /* Adds space between each link */
-        margin-bottom: 30px;
-			}
+        gap: 10px;
+        position: relative; /* Keeps it from floating over other content */
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
 
-				#nav + #main {
-					padding-top: 0;
-				}
+    #nav ul li {
+        display: block; /* Stacks links vertically */
+        margin: 5px 0;
+    }
 
-		}
+    #nav + #main {
+        padding-top: 20px; /* Gives space so the main content doesn't hide under nav */
+    }
 
 /* Main */
 
