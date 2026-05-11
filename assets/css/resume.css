@@ -3,16 +3,18 @@ body {
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    padding: 40px;
+    padding: 15px; /*chang*/
 }
 
 .resume-container {
     max-width: 850px;
+    width: 100%; /* Ensures it takes up full width on mobile */
     margin: auto;
     background: #e0e0e0;
-    padding: 40px;
-    border-radius: 8px;
+    padding: 20px; /*chang*/
+     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    box-sizing: border-box; /* Essential to keep padding from breaking width */
 }
 
 h1, h2, h3 {
@@ -134,5 +136,13 @@ hr {
 @media (min-width: 768px) {
     .resume-container {
         padding: 40px;
+    }
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    body, input, select, textarea {
+        font-size: 14px; /* Slightly smaller base text for small screens */
     }
 }
