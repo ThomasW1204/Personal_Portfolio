@@ -3348,7 +3348,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#nav {
-				align-items: center;
+				margin-bottom: 20px;
 			}
 
 				#nav + #main {
