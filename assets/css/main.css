@@ -3939,12 +3939,12 @@ input, select, textarea {
 
 
 .aboutMeBooks img {
-    display: block;   /* Allows margin: auto to work */
-    height: 50%;
-    width:100%;
-	margin: 0 auto;   /* 0 for top/bottom, auto for left/right (centers it) */
-	margin-bottom: 20px;
-	align-items:center;
+    image-orientation: none; /* Tells the browser: ignore EXIF rotation */
+    width: 100%;
+    
+	height: 50%;
+    display: block;
+    transform: none; /* Just in case a parent style is rotating it */
 }
 
 
