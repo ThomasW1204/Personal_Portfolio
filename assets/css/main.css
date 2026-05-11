@@ -3946,3 +3946,13 @@ input, select, textarea {
 	margin-bottom: 20px;
 	align-items:center;
 }
+
+
+
+/* Specific fix for mobile orientation glitches */
+@media screen and (max-width: 736px) {
+    .aboutMeBooks img {
+        width: 90%;     /* Shrinks it slightly so it doesn't hit the edges */
+        max-width: 300px;
+    }
+}
