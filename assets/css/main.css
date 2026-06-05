@@ -2653,14 +2653,51 @@ input, select, textarea {
 	section.special, article.special {
 		text-align: center;
 	}
+.badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Spacing between badges */
+    margin-top: 1em;
+}
+.badge-container a{
+    align-items: center;
+}
+/* Style and size constraints for the badge images */
+.cert-badge {
+    width: 150px;         /* Adjust the size to fit your design */
+    height: auto;         /* Maintains aspect ratio */
+    transition: transform 0.2s ease; /* Smooth hover effect */
+}
 
-	.technicalcontent ul li{
-		display: flex;
-		flex-direction: column; 
-		align-items: center;    
-		list-style: none;       
-		padding: 0;
-	}
+/* Optional: Slight lift effect when a visitor hovers over the badge */
+.cert-badge:hover {
+    transform: translateY(-3px);
+}
+/* Container to handle the side-by-side layout */
+.skills-cert-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2em; /* Spacing between the two columns */
+    margin-top: 2em;
+    text-align: left; /* Aligns content left within columns if parent is centered */
+}
+
+/* Give both columns equal width sizing */
+.technicalcontent, 
+.certificationscontent {
+    flex: 1;
+    min-width: 280px; /* Prevents columns from getting too squished */
+}
+
+/* Responsive design: Stack columns vertically on smaller screens (like phones) */
+@media screen and (max-width: 736px) {
+    .skills-cert-container {
+        flex-direction: column;
+        gap: 1.5em;
+    }
+}
 
 	header.major {
 		margin-bottom: 3em;
